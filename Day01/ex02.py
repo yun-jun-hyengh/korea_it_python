@@ -15,6 +15,9 @@ import keyword
 - 변수명의 첫 글자는 숫자로 시작할 수 없다 
 - 언더바(_)를 제외한 특수문자(@, !, $, &, ^ ...)는 사용할 수 없다 
 - 파이썬은 예약어를 사용할 수 없다 
+
+*예약어란?
+- 프로그래밍에서 이미 특정 용도로 사용되고 있는 단어를 말함 
 '''
 a = 10; # 파이썬은 변수 선언시 타입(int, double 등) 선언을 안해도 된다 !! 
 print(a);
@@ -71,4 +74,33 @@ print("예약어 총 개수 : ", len(keyword.kwlist));
 - 카멜 표기법, 파스칼 표기법, 헝가리안 표기법, 팟홀 표기법 
 
 카멜 표기법(Camel Case)
+- 각 단어의 첫문자를 대문자로 표기하고 맨 처음 문자는 소문자로 표기 
+
+파스칼 표기법(Pascal Case)
+- 카멜표기법과 흡사하지만 맨 처음 오는 글자도 대문자로 표기 
+
+헝가리안 표기법(Hungarian Notation)
+- 변수명 앞에 데이터타입을 표기 
+
+팟홀 표기법(Pothole case)
+- 단어 사이에 언더바를 넣어서 변수명을 작성하는 방법 
 '''
+
+# 카멜 표기법
+carNumber = "32가1234";
+print(carNumber);
+
+# 파스칼 표기법
+CarNumber = "33가4444";
+print(CarNumber);
+
+# 헝가리안 표기법
+strCarNumber = "123가4567"
+print(strCarNumber);
+
+intNumber = 10;
+print(intNumber);
+
+#팟홀 표기법
+car_number = "111111";
+print(car_number);
