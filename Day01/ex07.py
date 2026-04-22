@@ -5,4 +5,6 @@
 '''
 
 # 문자열 합치기 
-
+head = "Python";
+tail = "is fun!";
+print(head + tail);
