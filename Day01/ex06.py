@@ -19,3 +19,25 @@ print("str4 : ", str4);
 # 문자열에 작은따옴표 포함하고 싶을 때 
 food = "Python's favorite food is perl";
 print(food);
+#food1 = 'Python's favorite food is perl'; 큰따옴표 안에 들어 있는 작은따옴표는 문자열을 나타내는 기호로 인식되지 않는다. 
+
+# 문자열에 큰따옴표 포함시키기 
+#say = ""Python is very is." he says."; 작은따옴표 안에 사용된 큰따옴표는 문자열을 만드는 기호로 인식되지 않는다.
+say = '"Python is very very easy." he says.';
+print(say);
+
+# 역슬래시를 사용해서 작은따옴표와 큰따옴표를 문자열에 포함시키기 
+food1 = 'Python\'s favorite food is perl';
+say1 = "\"Python is very easy.\" he says.";
+print(food1);
+print(say1);
+
+# 여러 줄인 문자열을 변수에 대입하기 
+address = '''우편번호 123456
+서울시 영등포구 여의도동
+서울빌딩 501호
+'''
+print("address : ", address);
+
+address1 = "우편변호 123456\n서울시 영등포구 여의도동\n서울빌딩 501호";
+print("address1 : ", address1);
