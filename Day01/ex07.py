@@ -4,7 +4,13 @@
 이러한 연산을 통해 문자열을 효과적으로 다룰 수 있다
 '''
 
+# 문자열은 더하기 문자열 곱하기만 가능하다 나머지는 불가능
 # 문자열 합치기 
 head = "Python";
 tail = "is fun!";
 print(head + tail);
+
+# 문자열 반복하기 
+hello = "Hello";
+print(hello * 3);
+
