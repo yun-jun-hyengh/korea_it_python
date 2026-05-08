@@ -12,3 +12,6 @@ b = True;
 b1 = float(b);
 print("b : ", b); print("b : ", type(b));
 print("b1 : ", b1); print("b1 : ", type(b1));
+
+c = 'a';
+#c1 = float(c); 에러발생 (문자열을 실수로 변환하려 했기에)
