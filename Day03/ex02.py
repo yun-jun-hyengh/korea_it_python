@@ -13,3 +13,13 @@ result = num1 + num2; # 변수 result에 num1의 변수값과 num2의 변수값�
 print("num1 : ", num1); 
 print("num2 : ", num2);
 print("result : " , result);
+
+# 변수값 교환 실습
+a = 10; b = 20;
+print("a : ", a); print("b : ", b);
+print("=========")
+temp = 0; # 임시로 값을 저장할 변수를 하나 생성 
+temp = a; # a의 값을 temp 라는 변수에 대입 
+a = b; # b의 값을 a에 대입(기존에 a에 10을 대입하였으나 23번째 라인에서 b 변수값을 a에 대입했으므로 덮어써버림) 
+b = temp; # temp 의 값을 b에 대입
+print("a : ", a); print("b : ", b);
