@@ -16,6 +16,24 @@ def 함수이름(매개변수):
 return 이란?
 - 함수 내부에서 작업한 결과를 함수를 호출한 곳으로 돌려준다
 '''
+def a(a, b):
+    return a + b;
+
+def b(a, b):
+    return a - b;
+
+def c(a, b):
+    return a * b;
+
+def d(a, b):
+    return a // b;
+
+num1 = int(input("숫자입력 >> "))
+num2 = int(input("숫자입력 >> "))
+print(a(num1, num2))
+print(b(num1, num2));
+print(c(num1, num2))
+print(d(num1, num2))
 
 
 
