@@ -12,12 +12,21 @@
 입출력 예시)
 입력 >> TEST
 출력 : VGUV
+
+입력 >> sedfjwhsiufdhsdiuhfiurhgufhgiudhgiehgiuerhgkjfdhgiuserhfsdhfsdfh
+출력 : 문자열 범위 초과하였거나 공백이 포함되어 있습니다 
+
+입력 >> erd dfsf
+출력 >> 문자열 범위 초과하였거나 공백이 포함되어 있습니다 
 '''
 def solution(string):
     new_string = ""
-    for i in string:
-        code = ord(i);
-        new_string = new_string + chr(code + 2);
+    if len(string) > 20 or ' ' in string:
+        new_string = "문자열 범위 초과하였거나 공백이 포함되어 있습니다.";
+    else:
+        for i in string:
+            code = ord(i);
+            new_string = new_string + chr(code + 2);
     return new_string;
 
 string = input("입력 >> ");
