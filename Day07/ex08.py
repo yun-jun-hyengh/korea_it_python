@@ -27,3 +27,16 @@ print(example[2:6])
 print(example[0:5])
 
 # 튜플과 리스트 비교 
+list1 = [30,40,50];
+tuple1 = (30,40,50);
+
+list1[0] = 300;
+#tuple1[0] = 300; # 값을 변경할 수 없다 
+print(list1); 
+#print(tuple1);
+
+list1.append(10);
+print(list1);
+
+#tuple1.append(10); # 튜플은 추가 또한 불가능 
+#print(tuple1);
